@@ -21,6 +21,8 @@ type AdviceType = {
     adviceDispatch: React.Dispatch<DispatchDeleteType | DispatchEditType>
 }
 
+
+
 const Advice = ({ advice, index, adviceDispatch }: AdviceType) => {
     const [editedText, setEditedText] = useState(advice.advice || "");
     const [openTextEditor, setOpenTextEditor] = useState(false);
